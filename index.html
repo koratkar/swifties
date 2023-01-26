@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Tom Swifties 10k Project</title>
-    <link rel="stylesheet" href="style.css">
   </head>
   <body>
   <h1>Tom Swifties 10k Project</h1>
@@ -13,7 +12,7 @@
     <p>email me at ishaan [at] koratkar [dot] com</p>
     <p>Some aren't good, and need revision. That will be specified with a bold tag.</p>
     <p id="progress">Progress: </p>
-  <ol>  
+  <ol id="list">  
     <li>"You know what Christopher Nolan calls his little man? <i>Christopher Nolan</i>." Tom said periodically. <b>needs revision</b></li>
     <li>"I was trying to sacrafice a ram to poseidon, and it created an ocean of blood," Tom rambled.</li>
     <li>"WHERE IS SHE?" Tom growled balefully.</li>
@@ -71,7 +70,8 @@
     <li>“P l e a s e  h e l p  m e  p u t  m y  l e t t e r s  b a c k  t o g e t h e r.” Tom said as he spaced out.</li>
   </ol>
     <script>
-      document.getElementById("progress") = "Progress: " + (round(document.querySelectorAll(".list li").length / 10000) * 100) + "%"
+      var swifties = document.getElementById("list").getElementsByTagName("li");
+      document.getElementById("progress").innerHTML = "Progress: " + (swifties.length / 10000) * 100) + "%"
     </script>
   </body>
 </html>
