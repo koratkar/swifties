@@ -71,7 +71,7 @@
   </ol>
     <script>
       var swifties = document.getElementById("list").getElementsByTagName("li");
-      document.getElementById("progress").innerHTML = "Progress: " + (swifties.length / 10000) * 100) + "%"
+      document.getElementById("progress").innerHTML = "Progress: " + Math.round((swifties.length / 10000) * 1000) / 10 + "%"
     </script>
   </body>
 </html>
