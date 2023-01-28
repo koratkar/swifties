@@ -13,6 +13,7 @@
     <p>Some aren't good, and need revision. That will be specified with a bold tag.</p>
     <p id="progress">Progress: </p>
   <ol id="list">  
+    <li>"This file isn't what is used to be," Tom sed.</li>
     <li>"sed '/Tom/d' index.html" Tom sed before disappearing. <b>needs revision</b></li>
     <li>"I am pioneering the next innovation in Tom Swifties. The anti-Tom Swifty." Tom said.</li>
     <li>"That's some rough lead," Tom said, ruffled.</li>
@@ -77,5 +78,6 @@
       var swifties = document.getElementById("list").getElementsByTagName("li");
       document.getElementById("progress").innerHTML = "Progress: " + Math.round((swifties.length / 10000) * 1000) / 10 + "%"
     </script>
+    <p>Thanks to Chlorokin for help with some Tom Swifties</p>
   </body>
 </html>
